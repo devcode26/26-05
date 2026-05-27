@@ -3,27 +3,22 @@ import "./App.css";
 
 function App() {
 
-  // useState
   const [contador, setContador] = useState(0);
   const [likes, setLikes] = useState(0);
   const [mostrar, setMostrar] = useState(false);
   const [dark, setDark] = useState(false);
   const [nome, setNome] = useState("");
 
-  // useEffect
   const [carregando, setCarregando] = useState(true);
 
-  // Atualizar título
   useEffect(() => {
     document.title = `Contador: ${contador}`;
   }, [contador]);
 
-  // Console
   useEffect(() => {
     console.log("Nome mudou!");
   }, [nome]);
 
-  // Carregamento
   useEffect(() => {
 
     setTimeout(() => {
@@ -40,7 +35,6 @@ function App() {
         🚀 Atividades React
       </h1>
 
-      {/* CONTADOR */}
 
       <div className="card">
 
@@ -68,7 +62,6 @@ function App() {
 
       </div>
 
-      {/* LIKE */}
 
       <div className="card">
 
@@ -96,7 +89,6 @@ function App() {
 
       </div>
 
-      {/* MOSTRAR TEXTO */}
 
       <div className="card">
 
@@ -114,7 +106,6 @@ function App() {
 
       </div>
 
-      {/* TROCA DE COR */}
 
       <div className="card">
 
@@ -126,7 +117,6 @@ function App() {
 
       </div>
 
-      {/* INPUT */}
 
       <div className="card">
 
@@ -145,7 +135,6 @@ function App() {
 
       </div>
 
-      {/* CARREGAMENTO */}
 
       <div className="card">
 
